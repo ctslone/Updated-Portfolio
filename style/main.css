@@ -7,6 +7,7 @@ body {
     font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
     font-size: 10px;
+    background-color: rgb(201, 201, 201);
 }
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
@@ -65,6 +66,7 @@ body {
     color: #fff;
     line-height: 65px;
     font-size: 2.4rem;
+    cursor: pointer;
 }
 
 .nav div.main_list ul li a:hover {
@@ -76,7 +78,7 @@ body {
 
 .home {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-image: url(code-bkg.jpg);
     background-position: center top;
 	background-size:cover;
@@ -98,7 +100,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
-        margin: 0;
+        margin: 0 auto;
     }
 }
 
@@ -149,7 +151,6 @@ body {
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
 .navTrigger {
-    cursor: pointer;
     width: 30px;
     height: 25px;
     margin: auto;
@@ -351,7 +352,8 @@ body {
 
 .myH2 {
 	/* text-align:left; */
-	font-size: 4rem;
+    font-size: 4rem;
+    margin-bottom: 20px;
 }
 .myP {
 	/* text-align: justify; */
@@ -368,8 +370,31 @@ body {
 .card-text {
     font-size: 1.5em;
 }
+.card-img {
+    transition: transform .5s ease;
+}
+.hover-img {
+    overflow: hidden;
+}
+.hover-img:hover img {
+    transform: scale(1.15);
+}
 @media all and (max-width:700px){
 	.myP {
 		padding:2%;
 	}
+}
+
+footer {
+    position: fixed;
+    background-color: rgba(17, 17, 17, 0.7);
+    bottom: 0;
+    display: none;
+    z-index: 300;
+    width: 100%;
+}
+
+.footer-copyright {
+    margin: 10px;
+    font-size: 2em;
 }
