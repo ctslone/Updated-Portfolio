@@ -9,7 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="style/main.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Charlie Slone</title>
 </head>
@@ -37,6 +40,7 @@
 
     <section class="home">
     </section>
+    
 
     <div class="container">
         <div class="row">
@@ -79,8 +83,8 @@
             <div id="projects-div" class="col-sm-12 content-div" style="height: 100%;">
                 <h2 class="myH2">Projects</h2>
 
-                <div class="row"">
-                    <div class=" col-md-8">
+                <div class="row" data-aos="fade-right">
+                    <div class="col-md-8">
                     <div class="card mb-3 text-white bg-dark mb-3">
                         <div class="row no-gutters">
                             <div class="col-md-4 hover-img">
@@ -101,7 +105,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8 offset-lg-4 offset-md-4">
+                <div class="col-md-8 offset-lg-4 offset-md-4" data-aos="fade-left">
                     <div class="card mb-3 text-white bg-dark mb-3">
                         <div class="row no-gutters">
                             <div class="col-md-8">
@@ -123,7 +127,7 @@
 
             </div>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8" data-aos="fade-right">
                     <div class="card mb-3 text-white bg-dark mb-3">
                         <div class="row no-gutters">
                             <div class="col-md-4 hover-img">
@@ -144,7 +148,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8 offset-lg-4 offset-md-4">
+                <div class="col-md-8 offset-lg-4 offset-md-4" data-aos="fade-left">
                     <div class="card mb-3 text-white bg-dark mb-3">
                         <div class="row no-gutters">
                             <div class="col-md-8">
@@ -172,14 +176,14 @@
             <h2 id="connect-title" class="myH2">Connect</h2>
 
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center logo-btns">
+                <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center logo-btns" data-aos="fade-up">
                     <a href="https://github.com/ctslone"><img src="./style/github.jpg" class="img-fluid" height="300px" width="300px" style="margin: 0 auto; margin-bottom: 40px;"></a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center logo-btns">
+                <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center logo-btns" data-aos="flip-down">
                     <a href="https://www.linkedin.com/in/charlie-slone-704311a9/"><img src="./style/linkedin.png"
                             class="img-fluid" height="300px" width="300px" style="margin: 0 auto; margin-bottom: 40px;"></a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center logo-btns">
+                <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center logo-btns" data-aos="fade-up">
                     <a href="" data-toggle="modal" data-target="#exampleModalCenter"><img src="./style/email.png" class="img-fluid" height="300px" width="300px" style="margin: 0 auto; margin-bottom: 100px;"></a>
 
                 </div>
@@ -195,7 +199,7 @@
     <!-- MODAL -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalCenterTitle" style="font-size: 3em;">Drop Me a Line!</h5>
@@ -204,8 +208,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h2>Email - <a href="mailto:ctslone27@gmail.com?Subject=Inquiry">ctslone27@gmail.com</a></h2>
-                    <h2>Phone - (919) 449-8893</h2>
+                    <!-- <h2>Email - <a href="mailto:ctslone27@gmail.com?Subject=Inquiry">ctslone27@gmail.com</a></h2>
+                    <h2>Phone - (919) 449-8893</h2> -->
+                    <iframe src="./style/resume.pdf" width="100%" height="500px">
+                    </iframe>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -249,6 +255,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+            AOS.init();
+          </script>
     <script src="main.js"></script>
 </body>
 
