@@ -364,6 +364,18 @@ body {
 .content-div {
     margin-top: 30px;
 }
+#about-div {
+    height: 100%;
+    overflow-x: hidden;
+}
+#connect-div{
+    overflow-x: hidden;
+    margin-bottom: 150px;
+}
+#projects-div {
+    overflow-x: hidden;
+    height: 100%;
+}
 .card-title {
     font-size: 3em;
 }
@@ -372,6 +384,10 @@ body {
 }
 .card-img {
     transition: transform .5s ease;
+}
+.logo-btns {
+    margin: 0 auto; 
+    margin-bottom: 40px;
 }
 .hover-img {
     overflow: hidden;
