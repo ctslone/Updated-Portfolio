@@ -376,6 +376,9 @@ body {
     overflow-x: hidden;
     height: 100%;
 }
+#modal-title {
+    font-size: 3em
+}
 .card-title {
     font-size: 3em;
 }
