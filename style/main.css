@@ -328,6 +328,10 @@ body {
     margin-bottom: 40px;
 }
 
+.grow:hover {
+    transform: scale(1.05);
+}
+
 .hover-img {
     overflow: hidden;
 }
