@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="style/main.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -21,6 +21,7 @@
     <nav class="nav">
         <div class="container">
             <div class="logo">
+                <img src="./style/tiles/headshot.jpg" id="headshot" class="mr-3 img-fluid" alt="...">
                 <a href="index.html">Charlie Slone</a>
             </div>
             <div id="mainListDiv" class="main_list">
@@ -40,27 +41,39 @@
 
     <section class="home">
     </section>
-    
+
 
     <div class="container">
         <div class="row">
-            <div id="about-div" class="col-sm-12 col-md-12 col-lg-12 content-div" >
+            <div id="about-div" class="col-sm-12 col-md-12 col-lg-12 content-div">
                 <h2 class="myH2" data-aos="flip-up">About Me</h2>
-
                 <p class="myP" data-aos="flip-up">
-                    Hi my name is Charlie. I am a developer in training at the UNC Chapel Hill Coding Bootcamp. I
+                    Hi my name is Charlie. I am a developer in training at the UNC Chapel Hill Coding Bootcamp.
+                    I
                     recieved
-                    my Bachelor's Degree in Geology from NC State in 2016 but after working in the industry for a few
+                    my Bachelor's Degree in Geology from NC State in 2016 but after working in the industry for
+                    a few
                     years,
-                    I realized my passion was elsewhere. I decided to pursue software developoment as a career because I
+                    I realized my passion was elsewhere. I decided to pursue software developoment as a career
+                    because I
                     have always loved technology, solving problems and creating things!
                 </p>
+                <!-- <div class="media" >
+                    <img src="./style/tiles/headshot.jpg" id="headshot" class="mr-3 img-fluid" alt="..." data-aos="fade-right">
+                    <div class="media-body myP" data-aos="flip-up">
+                        Hi my name is Charlie. I am a developer in training at the UNC Chapel Hill Coding Bootcamp.
+                        I recieved my Bachelor's Degree in Geology from NC State in 2016 but after working in the
+                        industry for a few years, I realized my passion was elsewhere. I decided to pursue software
+                        developoment as a career because I have always loved technology, solving problems and creating
+                        things!
+                    </div>
+                </div> -->
                 <p class="myP" data-aos="flip-up">
                     I have proven skills in HTML, CSS, JavaScript/jQuery, API Documentation/JSON/AJAX, NodeJS and more!
                     If
                     you would like to check out some of my work, please click on the projects link where you can view
                     all
-                    the projects I completed to assisted in development.
+                    the projects I completed or assisted with.
                 </p>
                 <p class="myP" data-aos="flip-up">
                     As a developer in a mobile-first world, I strive for excellence in creating attractive, intuative
@@ -85,142 +98,156 @@
 
                 <div class="row">
                     <div class="col-md-8" data-aos="fade-right">
-                    <div class="card mb-3 text-white bg-dark mb-3">
-                        <div class="row no-gutters">
-                            <div class="col-md-4 hover-img">
-                                <a href="https://zhenyang9261.github.io/web-project1/"><img src="./style/what2fix.png" class="card-img" alt="..."></a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">What2Fix</h5>
-                                    <p class="card-text">This app solves the age old problem of "what can I make with
-                                        what is in my fridge?".</p>
+                        <div class="card mb-3 text-white bg-dark mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 hover-img">
+                                    <a href="https://zhenyang9261.github.io/web-project1/"><img
+                                            src="./style/tiles/what2fix.png" class="card-img" alt="..."></a>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">What2Fix</h5>
+                                        <p class="card-text">This app solves the age old problem of "what can I make
+                                            with
+                                            what is in my fridge?".</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8 offset-lg-4 offset-md-4" data-aos="fade-left">
-                    <div class="card mb-3 text-white bg-dark mb-3">
-                        <div class="row no-gutters">
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Crystal Conundrum</h5>
-                                    <p class="card-text">This memory based puzzle game will test your ability to
-                                        associate, shapes, colors and numbers to each other!</p>
+                <div class="row">
+                    <div class="col-md-8 offset-lg-4 offset-md-4" data-aos="fade-left">
+                        <div class="card mb-3 text-white bg-dark mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Crystal Conundrum</h5>
+                                        <p class="card-text">This memory based puzzle game will test your ability to
+                                            associate, shapes, colors and numbers to each other!</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 hover-img">
+                                    <a href="https://ctslone.github.io/unit-4-game/"><img
+                                            src="./style/tiles/crystal.png" class="card-img" alt="..."></a>
                                 </div>
                             </div>
-                            <div class="col-md-4 hover-img">
-                                <a href="https://ctslone.github.io/unit-4-game/"><img src="./style/crystal.png" class="card-img" alt="..."></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-8" data-aos="fade-right">
+                        <div class="card mb-3 text-white bg-dark mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 hover-img">
+                                    <a href="https://ctslone.github.io/Trivia-Game/"><img src="./style/tiles/trivia.png"
+                                            class="card-img" alt="..."></a>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Thrones Trivia</h5>
+                                        <p class="card-text">Test your Westerosi knowledge against the clock in this
+                                            Game of
+                                            Thrones themed trivia game!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 offset-lg-4 offset-md-4" data-aos="fade-left">
+                        <div class="card mb-3 text-white bg-dark mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jify</h5>
+                                        <p class="card-text">A punny spin-off of the super popular Giphy app. Jify!
+                                            Search for your favorite gifs (or jifs) with this app!</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 hover-img">
+                                    <a href="https://ctslone.github.io/Gifs-on-Gifs/"><img src="./style/tiles/jify.png"
+                                            class="card-img" alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8" data-aos="fade-right">
+                        <div class="card mb-3 text-white bg-dark mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 hover-img">
+                                    <a href="https://ctslone.github.io/Word-Guess-Game/"><img
+                                            src="./style/tiles/hangman.png" class="card-img" alt="..."></a>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Need for Speed: Hangman</h5>
+                                        <p class="card-text">Have a lead food? Test you car guessing skills in this
+                                            speed inspired hangman game!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 offset-lg-4 offset-md-4" data-aos="fade-left">
+                        <div class="card mb-3 text-white bg-dark mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Friendelodeon</h5>
+                                        <p class="card-text">A full stack application utilizing Node, Express and MySQL
+                                            to provide a user with best-match cartoon friend using response data from a
+                                            survey. </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 hover-img">
+                                    <a href="https://friendelodeon.herokuapp.com/"><img
+                                            src="./style/tiles/friendelodeon.png" class="card-img" alt="..."></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="row">
-                <div class="col-md-8" data-aos="fade-right">
-                    <div class="card mb-3 text-white bg-dark mb-3">
-                        <div class="row no-gutters">
-                            <div class="col-md-4 hover-img">
-                                    <a href="https://ctslone.github.io/Trivia-Game/"><img src="./style/trivia.png" class="card-img" alt="..."></a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Thrones Trivia</h5>
-                                    <p class="card-text">Test your Westerosi knowledge against the clock in this Game of
-                                        Thrones themed trivia game!</p>
-                                </div>
-                            </div>
-                        </div>
+        </div>
+
+        <div class="row">
+            <div id="connect-div" class="col-sm-12 col-md-12 col-lg-12 content-div">
+                <h2 id="connect-title" class="myH2">Connect</h2>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center logo-btns" data-aos="flip-up">
+                        <a href="https://github.com/ctslone"><img src="./style/tiles/github.jpg"
+                                class="img-fluid grow"></a>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8 offset-lg-4 offset-md-4" data-aos="fade-left">
-                    <div class="card mb-3 text-white bg-dark mb-3">
-                        <div class="row no-gutters">
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Jify</h5>
-                                    <p class="card-text">A punny spin-off of the super popular Giphy app. Jify! Search for your favorite gifs (or jifs) with this app!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 hover-img">
-                                <a href="https://ctslone.github.io/Gifs-on-Gifs/"><img src="./style/jify.png" class="card-img" alt="..."></a>
-                            </div>
-                        </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center logo-btns" data-aos="flip-up">
+                        <a href="https://www.linkedin.com/in/charlie-slone-704311a9/"><img
+                                src="./style/tiles/linkedin.png" class="img-fluid grow"></a>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8" data-aos="fade-right">
-                    <div class="card mb-3 text-white bg-dark mb-3">
-                        <div class="row no-gutters">
-                            <div class="col-md-4 hover-img">
-                                    <a href="https://ctslone.github.io/Word-Guess-Game/"><img src="./style/hangman.png" class="card-img" alt="..."></a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Need for Speed: Hangman</h5>
-                                    <p class="card-text">Have a lead food? Test you car guessing skills in this speed inspired hangman game!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8 offset-lg-4 offset-md-4" data-aos="fade-left">
-                    <div class="card mb-3 text-white bg-dark mb-3">
-                        <div class="row no-gutters">
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Friendelodeon</h5>
-                                    <p class="card-text">A full stack application utilizing Node, Express and MySQL to provide a user with best-match cartoon friend using response data from a survey. </p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 hover-img">
-                                <a href="https://friendelodeon.herokuapp.com/"><img src="./style/friendelodeon.png" class="card-img" alt="..."></a>
-                            </div>
-                        </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center logo-btns" data-aos="flip-up">
+                        <a href="" data-toggle="modal" data-target="#resumeModal"><img src="./style/tiles/email.png"
+                                class="img-fluid grow"></a>
+
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
-
-    <div class="row">
-        <div id="connect-div" class="col-sm-12 col-md-12 col-lg-12 content-div" >
-            <h2 id="connect-title" class="myH2">Connect</h2>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center logo-btns" data-aos="flip-up">
-                    <a href="https://github.com/ctslone"><img src="./style/github.jpg" class="img-fluid grow"></a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center logo-btns" data-aos="flip-up">
-                    <a href="https://www.linkedin.com/in/charlie-slone-704311a9/"><img src="./style/linkedin.png"
-                            class="img-fluid grow"></a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center logo-btns" data-aos="flip-up">
-                    <a href="" data-toggle="modal" data-target="#resumeModal"><img src="./style/email.png" class="img-fluid grow"></a>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
 
 
 
     </div>
 
     <!-- MODAL -->
-    <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog"
-        aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -230,14 +257,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <!-- <h2>Email - <a href="mailto:ctslone27@gmail.com?Subject=Inquiry">ctslone27@gmail.com</a></h2>
-                    <h2>Phone - (919) 449-8893</h2> -->
                     <iframe src="./style/resume.pdf" width="100%" height="500px">
                     </iframe>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
         </div>
@@ -254,19 +278,6 @@
 
     <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
-
-    <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -276,10 +287,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- animate on scroll library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-            AOS.init();
-          </script>
+        AOS.init();
+    </script>
+    <!-- site js file link -->
     <script src="main.js"></script>
 </body>
 
