@@ -22,6 +22,7 @@ $(document).ready(function () {
             scrollTop: $("#about-div").offset().top - 95
         },
             'slow');
+        $("#about-btn").css("color", "red")
     });
     // scroll to top of projects
     $("#project-btn").click(function () {
@@ -45,5 +46,11 @@ $(document).ready(function () {
             $('footer').slideUp(300);
         }
     });
+
+    // scrollspy
+    $('body').scrollspy({
+        target: '#main-nav',
+        offset: 50
+      });
 
 })
