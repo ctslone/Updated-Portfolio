@@ -348,12 +348,6 @@ body {
     transform: scale(1.15);
 }
 
-@media all and (max-width:700px){
-	.myP {
-		padding:2%;
-	}
-}
-
 #about-div {
     height: 100%;
     overflow-x: hidden;
@@ -366,6 +360,16 @@ body {
     overflow-x: hidden;
     height: 100%;
 }
+
+#githubLink {
+    text-decoration: none;
+    color: #00E676;
+}
+
+#githubLink:hover {
+    color: #F19830;;
+}
+
 #modal-title {
     font-size: 3em
 }
@@ -385,6 +389,12 @@ footer {
 }
 
 /* Media qurey section */
+
+@media all and (max-width:700px){
+	.myP {
+		padding:2%;
+	}
+}
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
