@@ -16,27 +16,39 @@ $(document).ready(function () {
         $("#mainListDiv").fadeIn();
 
     });
+
+    // click on nav link
+    // remove class active of navTrigger class
+    // give the span a custom ID?
+    $(".navItem").click(function() {
+        $("#mainListDiv").removeClass("show_list");
+        $(".navTrigger").removeClass("active");
+    })
+
+    // changing nav links to show active
+    $(".navItem").click(function() {
+        $("a.active").removeClass("active")
+        $(this).addClass("active")
+    })
+
     // scroll to top of about section
     $("#about-btn").click(function () {
         $('html,body').animate({
             scrollTop: $("#about-div").offset().top - 95
-        },
-            'slow');
-        $("#about-btn").css("color", "red")
+        },'slow');
+        
     });
     // scroll to top of projects
     $("#project-btn").click(function () {
         $('html,body').animate({
             scrollTop: $("#projects-div").offset().top - 95
-        },
-            'slow');
+        },'slow');
     });
     // scroll to top of connect
     $("#connect-btn").click(function () {
         $('html,body').animate({
             scrollTop: $("#connect-div").offset().top - 80
-        },
-            'slow');
+        },'slow');
     });
     // footer scroll animations
     $(window).scroll(function () {
@@ -46,11 +58,33 @@ $(document).ready(function () {
             $('footer').slideUp(300);
         }
     });
+    $(window).scroll(function() {
+        if ($(window).scrollTop() < 600) {
+            $('#about-btn').removeClass("active");
+        }
+        if($(window).scrollTop() > 600) {
+            // $('#about-btn').removeClass("active");
+            $('#about-btn').addClass("active");
+            $('#project-btn').removeClass("active");
+        }
+        if ($(window).scrollTop() > 1100) {
+            $('#about-btn').removeClass("active");
+            $('#project-btn').addClass("active");
+        }
+        if ($(window).scrollTop() > 2675) {
+            $('#project-btn').removeClass("active");
+            $('#connect-btn').addClass("active");
+        }
+        if ($(window).scrollTop() < 2675) {
+            $('#connect-btn').removeClass("active");
+        }
+    })
+    
 
     // scrollspy
-    $('body').scrollspy({
-        target: '#main-nav',
-        offset: 50
-      });
+    // $('body').scrollspy({
+    //     target: '#mainListDiv',
+    //     offset: 50
+    //   });
 
 })
