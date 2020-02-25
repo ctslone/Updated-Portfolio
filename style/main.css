@@ -325,6 +325,10 @@ body {
     margin-top: 30px;
 }
 
+.rounded-card {
+    border-radius: 15px;
+}
+
 .card-title {
     font-size: 3em;
 }
@@ -347,6 +351,7 @@ body {
 
 .hover-img {
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .hover-img:hover img {
