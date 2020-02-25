@@ -338,6 +338,7 @@ body {
 }
 .card-img {
     transition: transform .5s ease;
+    height: 100%
 }
 
 .logo-btns {
