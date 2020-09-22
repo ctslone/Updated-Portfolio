@@ -1,5 +1,15 @@
 $(document).ready(function () {
 
+    var name = "charlie";
+function foo() {
+  name = "spencer";
+  return;
+  function name() {}
+};
+foo();
+
+console.log(name)
+
     // fade nav effect
     $(window).scroll(function () {
         if ($(document).scrollTop() > 50) {
